@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto Serif", serif;
+}
+
+.main-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 5% 95%;
+}
+
+.header {
+  background-color: beige;
+  grid-column: 2;
+}
+
+.sidebar {
+  background-color: #111827;
+  color: white;
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 10% 1fr;
+  padding: 3.2rem;
+}
+
+.first {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+label {
+  font-size: 2.2rem;
+}
+
+input {
+  font-family: inherit;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  border-radius: 0.8rem;
+  border: none;
+}
+
+.checkbox {
+  margin-top: 2rem;
+  font-family: inherit;
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin-top: 4rem;
+  flex: initial;
+  font-size: 2.5rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.8rem;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #030712;
+
+  color: white;
+  font-weight: 800;
+}
+
+.btn:active {
+  background-color: #1f2937;
+}
+
+.checkbox-button {
+  height: 2rem;
+  width: 2rem;
+}
+
+.main-content {
+  height: 100%;
+  background-color: #f3f4f6;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.table-wrapper {
+  max-height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+table {
+  width: 100%;
+
+  /* border-collapse: collapse; */
+}
+
+thead {
+  background-color: #111827;
+  color: white;
+  font-size: 2.4rem;
+  position: sticky;
+  top: 0rem;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 1.6rem;
+}
+
+thead th:nth-child(1) {
+  width: 25%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 5%;
+}
+
+thead th:nth-child(4) {
+  width: 20%;
+}
+
+thead th:nth-child(5) {
+  width: 15%;
+}
+
+tbody {
+  font-size: 1.6rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #d1d5db;
+}
+
+tbody tr:hover {
+  transform: scale(1.01);
+}
+
+.footer {
+  grid-column: 2;
+  grid-row: 3;
+  background-color: aliceblue;
+}
+
+.delete:hover,
+.edit:hover {
+  color: red;
+  cursor: pointer;
+}

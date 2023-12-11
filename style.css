@@ -1,7 +1,11 @@
 * {
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
 }
 
 html {
@@ -13,12 +17,7 @@ html {
   height: 100vh;
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-template-rows: 5% 95%;
-}
-
-.header {
-  background-color: beige;
-  grid-column: 2;
+  grid-template-rows: 100%;
 }
 
 .sidebar {
@@ -57,7 +56,17 @@ input {
   padding: 0.8rem;
   font-size: 1.8rem;
   border-radius: 0.8rem;
-  border: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+input.error {
+  border: 2px solid red;
+  box-sizing: border-box;
 }
 
 .checkbox {
@@ -95,7 +104,8 @@ input {
   background-color: #1f2937;
 }
 
-.checkbox-button {
+.checkbox-button,
+.checkbox-button-edit {
   height: 2rem;
   width: 2rem;
 }
@@ -104,7 +114,7 @@ input {
   height: 100%;
   background-color: #f3f4f6;
   grid-column: 2;
-  grid-row: 2;
+  position: relative;
 }
 
 .table-wrapper {
@@ -116,6 +126,27 @@ table {
   width: 100%;
 
   /* border-collapse: collapse; */
+}
+
+.table-empty {
+  margin: auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+
+.inactive {
+  display: none;
+}
+
+.sad-face {
+  font-size: 7rem !important;
 }
 
 thead {
@@ -174,4 +205,68 @@ tbody tr:hover {
 .edit:hover {
   color: red;
   cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.delete-dialog {
+  height: 20rem;
+  width: 50rem;
+  background-color: #f3f4f6;
+  border: none;
+  border-radius: 0.8rem;
+}
+
+.modal {
+  padding: 0.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 1.6rem;
+}
+
+.dialog-text {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.dialog-button {
+  padding: 1.2rem 1.6rem;
+  font-size: 1.8rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: #030712;
+  color: white;
+  font-weight: 700;
+}
+
+.table-button {
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.action-button {
+  display: block;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.6rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: #cdcdd0;
+  font-weight: 700;
+}
+
+.action-button:hover {
+  background-color: #030712;
+  color: white;
+}
+
+.modal-edit {
+  width: 38rem;
 }

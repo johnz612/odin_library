@@ -18,9 +18,7 @@
   </head>
   <body>
     <div class="main-container">
-      <div class="header">
-        <h1>Library</h1>
-      </div>
+     
       <div class="sidebar">
         <div class="first">
           <span class="material-symbols-outlined"> book_2 </span>
@@ -28,40 +26,42 @@
         </div>
         <div class="second">
           <h2>Add a new book</h2>
-          <label for="title">Title</label>
-          <input
-            class="title"
-            type="text"
-            id="title"
-            placeholder="Title"
-            required
-            minlength="1"
-          />
-          <label for="author">Author</label>
-          <input
-            class="author"
-            type="text"
-            id="author"
-            placeholder="Author"
-            required
-            minlength="1"
-          />
-          <label for="pages">Pages</label>
-          <input
-            class="pages"
-            type="number"
-            id="pages"
-            placeholder="Pages"
-            required
-            minlength="1"
-          />
-          <div class="checkbox">
-            <span>Done Reading?</span>
-            <input type="checkbox" class="checkbox-button" value="true" />
-          </div>
-          <div class="btn-container">
-            <button type="submit" class="btn">Add Book</button>
-          </div>
+          <form action="/" method="GET" class="form">
+            <label for="title">Title</label>
+            <input
+              class="title"
+              type="text"
+              id="title"
+              placeholder="Title"
+              required
+              minlength="1"
+            />
+            <label for="author">Author</label>
+            <input
+              class="author"
+              type="text"
+              id="author"
+              placeholder="Author"
+              required
+              minlength="1"
+            />
+            <label for="pages">Pages</label>
+            <input
+              class="pages"
+              type="number"
+              id="pages"
+              placeholder="Pages"
+              required
+              minlength="1"
+            />
+            <div class="checkbox">
+              <span>Done Reading?</span>
+              <input type="checkbox" class="checkbox-button" value="true" />
+            </div>
+            <div class="btn-container">
+              <button type="submit" class="btn">Add Book</button>
+            </div>
+          </form>
         </div>
       </div>
       <div class="main-content">
@@ -77,205 +77,68 @@
               </tr>
             </thead>
             <tbody>
-              <!-- <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr> -->
-              <!-- <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing John</td>
-                <td>john</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing sec</td>
-                <td>sec</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr>
-              <tr>
-                <td>The amazing rey</td>
-                <td>rey</td>
-                <td>150</td>
-                <td>Read</td>
-                <td>Delete/edit</td>
-              </tr> -->
             </tbody>
           </table>
+          <div class="table-empty">
+            <span class="material-symbols-outlined sad-face">
+              sentiment_sad
+              </span>
+            Table is empty. Add a book
+          </div>
         </div>
       </div>
     </div>
-    <div class="dialog-container">
-      <dialog>
-        <h3>New Book</h3>
-        <input type="text" placeholder="Title" required minlength="1" />
-        <input type="text" placeholder="Author" required minlength="1" />
-        <input type="number" placeholder="Pages" required minlength="1" />
-        <div class="checkbox">
-          <span>Done Reading?</span>
-          <input type="checkbox" class="checkbox" />
+    <dialog class="delete-dialog">
+      <div class="modal">
+        <h3 class="delete-text dialog-text">Are you sure to delete</h3>
+        <div class="button-container">
+          <button class="dialog-button yes">Yes</button>
+          <button class="dialog-button no">No</button>
         </div>
-      </dialog>
-    </div>
+      </div>
+    </dialog>
+    <dialog class="edit-dialog">
+      <div class="modal modal-edit">
+        <h3 class="dialog-text">Edit Book</h3>
+        <form action="/" method="GET" class="form-edit">
+          <label for="edit-title">Title</label>
+          <input
+            class="title-edit"
+            type="text"
+            id="edit-title"
+            placeholder="Title"
+            required
+            minlength="1"
+          />
+          <label for="edit-author">Author</label>
+          <input
+            class="author-edit"
+            type="text"
+            id="edit-author"
+            placeholder="Author"
+            required
+            minlength="1"
+          />
+          <label for="edit-pages">Pages</label>
+          <input
+            class="pages-edit"
+            type="number"
+            id="edit-pages"
+            placeholder="Pages"
+            required
+            minlength="1"
+          />
+          <div class="checkbox">
+            <span>Done Reading?</span>
+            <input type="checkbox" class="checkbox-button-edit" value="true" />
+          </div>
+          <div class="btn-container-edit">
+            <button type="submit" class="btn">Edit Book</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </dialog>
     <script src="script.js"></script>
   </body>
 </html>
